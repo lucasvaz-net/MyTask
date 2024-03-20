@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content=Itask - Gerenciador de Tarefas" />
+    <meta property="og:description" content="Portal de Gestão de tarefas" />
+    <meta property="og:image" content="https://itask.lucasvaz.dev.br/img/banner.png" />
+    <link type="image/png" sizes="32x32" rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/Styles.css" />
+    <title>Lista de Tarefas</title>
+
+</head>
+<body>
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">iTask</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link" href="index.html">Tarefas</a>
+                    <a class="nav-link" href="create.html">Criar Nova Tarefa</a>
+                    <a class="nav-link" href="login.html">Sair</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+     <div>
+     <a class="btn btn-primary mt-4" href="create.html" style="margin-left:110px;">Criar Nova Tarefa</a>
+ </div>
+    <div class="container mt-4">
+        <table class="table table-dark table-striped">
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Descrição</th>
+                    <th>Data de Vencimento</th>
+                    <th>Prioridade</th>
+                    <th>Categoria</th>
+                    <th>Status</th>
+                    <th>Usuário</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>Comprar pão</td>
+                    <td>Comprar pão na padaria para o café da manhã</td>
+                    <td>2024-03-15</td>
+                    <td>Alta</td>
+                    <td>Casa</td>
+                    <td>Pendente</td>
+                    <td>João</td>
+                    <td>
+                       
+                       <a href="edit.html" class="btn btn-primary">Editar</a>
+                       <button class="btn btn-danger" onclick="confirmDeletion()">Excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Enviar relatório</td>
+                    <td>Enviar relatório de vendas do mês passado</td>
+                    <td>2024-03-20</td>
+                    <td>Média</td>
+                    <td>Trabalho</td>
+                    <td>Concluída</td>
+                    <td>Maria</td>
+                    <td>
+                       <a href="edit.html" class="btn btn-primary">Editar</a>
+                       <button class="btn btn-danger" onclick="confirmDeletion()">Excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Marcar consulta</td>
+                    <td>Marcar consulta médica de rotina</td>
+                    <td>2024-04-05</td>
+                    <td>Baixa</td>
+                    <td>Saúde</td>
+                    <td>Pendente</td>
+                    <td>Cláudio</td>
+                    <td>
+                       <a href="edit.html" class="btn btn-primary">Editar</a>
+                       <button class="btn btn-danger" onclick="confirmDeletion()">Excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+       
+    </div>
+        <footer class="footer bg-dark text-center text-lg-start text-muted">
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 Direito Autoral:
+            <a class="text-reset fw-bold" href="https://seusite.com/">iTask.com</a>
+        </div>
+    </footer>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="js/delete.js"></script>
+
+</body>
+</html>

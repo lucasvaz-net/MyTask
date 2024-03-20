@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content=Itask - Gerenciador de Tarefas" />
+    <meta property="og:description" content="Portal de Gestão de tarefas" />
+    <meta property="og:image" content="https://itask.lucasvaz.dev.br/img/banner.png" />
+    <link type="image/png" sizes="32x32" rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/Styles.css" />
+    <title>Editar Tarefa</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">iTask</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link" href="index.html">Tarefas</a>
+                    <a class="nav-link" href="Create.html">Criar Tarefa</a>
+                    <a class="nav-link" href="login.html">Sair</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="mb-4 text-center">Editar Tarefa</h2>
+                <form id="editTaskForm">
+                    <input type="hidden" id="Id" name="Id" value="1">
+
+                    <div class="mb-3">
+                        <label for="Titulo" class="form-label">Título:</label>
+                        <input type="text" class="form-control" id="Titulo" name="Titulo" placeholder="Digite o título da tarefa">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Descricao" class="form-label">Descrição:</label>
+                        <textarea class="form-control" id="Descricao" name="Descricao" rows="3" placeholder="Descreva a tarefa"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="DataVencimento" class="form-label">Data de Vencimento:</label>
+                        <input type="date" class="form-control" id="DataVencimento" name="DataVencimento">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Prioridade" class="form-label">Prioridade:</label>
+                        <select class="form-control" id="Prioridade" name="Prioridade">
+                            <option value="1">Alta</option>
+                            <option value="2">Média</option>
+                            <option value="3">Baixa</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="CategoriaId" class="form-label">Categoria:</label>
+                        <select class="form-control" id="CategoriaId" name="CategoriaId">
+                            <option value="1">Trabalho</option>
+                            <option value="2">Pessoal</option>
+                            <option value="3">Lazer</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="StatusId" class="form-label">Status:</label>
+                        <select class="form-control" id="StatusId" name="StatusId">
+                            <option value="1">Pendente</option>
+                            <option value="2">Em Andamento</option>
+                            <option value="3">Concluída</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="UsuarioId" class="form-label">Usuário Responsável:</label>
+                        <select class="form-control" id="UsuarioId" name="UsuarioId">
+                            <option value="1">João</option>
+                            <option value="2">Maria</option>
+                            <option value="3">Ana</option>
+                        </select>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Confirmar</button>
+                        <a class="btn btn-danger" href="javascript:history.back()">Retornar</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer bg-dark text-center text-lg-start text-muted">
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 Direito Autoral:
+            <a class="text-reset fw-bold" href="https://seusite.com/">iTask.com</a>
+        </div>
+    </footer>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
